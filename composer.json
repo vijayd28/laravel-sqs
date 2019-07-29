@@ -1,0 +1,34 @@
+{
+    "name": "vijayd28/laravel_sqs",
+    "description": "Laravel package for AWS SQS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vijay",
+            "email": "vijay4vijju@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.107"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+     },
+     "autoload-dev": {
+        "psr-4": {
+            "Vijayd28\\LaravelSQS\\Test\\": "tests"
+        }
+     },
+    "autoload": {
+        "psr-4": {
+            "Vijayd28\\LaravelSQS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vijayd28\\LaravelSQS\\ServiceProvider"
+            ]
+        }
+    }
+}
